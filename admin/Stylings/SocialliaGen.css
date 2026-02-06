@@ -1,0 +1,65 @@
+.sociallia-gen {
+  max-width: 820px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.sociallia-gen h1 {
+  font-size: 1.7rem;
+  margin-bottom: 1.25rem;
+}
+
+.sociallia-gen label {
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.sociallia-gen textarea {
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  resize: vertical;
+}
+
+.sociallia-gen textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.sociallia-gen button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.sociallia-gen button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.gen-output {
+  margin-top: 2rem;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.gen-output h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

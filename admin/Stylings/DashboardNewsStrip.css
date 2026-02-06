@@ -1,0 +1,186 @@
+.news-strip {
+  display: flex;
+  gap: 16px;
+  padding: 14px;
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 14px;
+  align-items: center;
+}
+
+/* Image */
+.news-image {
+  width: 90px;
+  height: 65px;
+  border-radius: 8px;
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-fallback {
+  position: absolute;
+  font-size: 11px;
+  color: #94a3b8;
+  display: none;
+}
+
+.news-image.image-error .image-fallback {
+  display: block;
+}
+
+
+/* Content */
+.news-content {
+  flex: 1;
+}
+
+.news-content h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.news-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.news-tags span {
+  font-size: 11px;
+  padding: 4px 8px;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border-radius: 999px;
+}
+
+.news-date {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Right */
+.news-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.publisher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text);
+}
+
+.publisher img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Buttons */
+.action-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.action-buttons button {
+  background: var(--btn-bg);
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: var(--text);
+}
+
+.action-buttons button:hover {
+  background: var(--btn-hover);
+}
+.image-fallback {
+  display: none;
+  font-size: 11px;
+  color: #94a3b8;
+  text-align: center;
+  padding: 4px;
+}
+
+/* Show only when image fails */
+.news-image.image-error .image-fallback {
+  display: block;
+}
+
+Add this CSS in DashboardNewsStrip.css
+
+.confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999999; /* important */
+}
+
+
+.confirm-box {
+  background: #0f0f14;
+  color: #fff;
+  padding: 20px 22px;
+  border-radius: 14px;
+  width: 320px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.confirm-box h3 {
+  margin: 0 0 8px;
+}
+
+.confirm-box p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.btn-cancel {
+  background: transparent;
+  color: #bbb;
+  border: 1px solid #333;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.btn-danger {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+}

@@ -1,0 +1,148 @@
+/* ===== FORM ROOT ===== */
+.signup-form {
+  width: 100%;
+  display: flex;                 /* ✅ REQUIRED */
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== HEADING ===== */
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===== SOCIALS ===== */
+.signup-socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.signup-socials span {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== SMALL TEXT ===== */
+.signup-small-text {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* ===== EMAIL FIELD ===== */
+.signup-email-field {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.signup-email-field input {
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  background: #eee;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  text-align: left;              /* ✅ FIX */
+  box-sizing: border-box;
+}
+
+/* ===== PASSWORD FIELD ===== */
+.signup-password-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.signup-password-field input {
+  width: 100%;
+  height: 44px;
+  padding: 0 96px 0 14px;
+  background: #eee;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  line-height: 44px;
+  text-align: left;              /* ✅ FIX */
+  box-sizing: border-box;
+}
+
+/* ===== SHOW / HIDE BUTTON ===== */
+.signup-toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* ===== ERROR ===== */
+.signup-error-text {
+  color: #ff4b2b;
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.signup-primary-btn {
+  margin-top: 20px;
+  padding: 12px 40px;
+  border-radius: 20px;
+  border: none;
+  background: #ff4b2b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: center;            /* ✅ CENTER BUTTON */
+}
+
+.signup-primary-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+/* Google Sign-in button */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 0;
+  background: white;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3c4043;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.google-btn:hover {
+  background: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.google-btn:active {
+  background: #e8e8e8;
+}
+
+.google-logo {
+  width: 18px;
+  height: 18px;
+}

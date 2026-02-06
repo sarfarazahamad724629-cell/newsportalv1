@@ -1,0 +1,147 @@
+/* ---------- Root ---------- */
+.login-container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #151726, #0b0d17);
+  font-family: "Inter", system-ui, sans-serif;
+  color: #eaeaf0;
+}
+
+/* ---------- Card ---------- */
+.login-form {
+  width: 360px;
+  padding: 36px;
+  background: rgba(26, 28, 43, 0.85);
+  border-radius: 14px;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.6),
+    inset 0 0 0 1px rgba(255,255,255,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.login-title {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.login-subtitle {
+  font-size: 13px;
+  text-align: center;
+  color: #9aa0b4;
+  margin-bottom: 10px;
+}
+
+/* ---------- Inputs ---------- */
+.login-form input {
+  background: #111325;
+  border: 1px solid transparent;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 0 3px rgba(76,175,80,0.15);
+}
+
+/* ---------- Button ---------- */
+.login-form button {
+  margin-top: 6px;
+  padding: 12px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4caf50, #43a047);
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.login-form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(76,175,80,0.35);
+}
+
+.login-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ---------- Messages ---------- */
+.error-text {
+  color: #ff7676;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* ---------- Popup Overlay ---------- */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: grid;
+  place-items: center;
+  animation: fadeIn 0.2s ease;
+}
+
+/* ---------- Popup Card ---------- */
+.popup-content {
+  width: 340px;
+  background: #1a1c2b;
+  padding: 26px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.popup-content h3 {
+  font-size: 18px;
+}
+
+.popup-subtext {
+  font-size: 13px;
+  color: #aab0c4;
+}
+
+.popup-content input {
+  background: #111325;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.popup-content input:focus {
+  border-color: #4caf50;
+}
+
+/* ---------- Popup Buttons ---------- */
+.popup-content button {
+  padding: 11px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4caf50, #43a047);
+  font-weight: 600;
+}
+
+.close-btn {
+  background: transparent;
+  color: #ff6b6b;
+  border: 1px solid rgba(255,107,107,0.3);
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}

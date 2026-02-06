@@ -1,0 +1,328 @@
+/* ───────────────── ROOT ───────────────── */
+.configure-head {
+  width: 100%;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ───────────────── TOP BAR ───────────────── */
+.ch-topbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 12px;
+}
+
+/* LEFT */
+.ch-topbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* CENTER */
+.ch-topbar-center {
+  display: flex;
+  justify-content: center;
+}
+
+.ch-tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.ch-tab {
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+
+.ch-tab:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.ch-tab-active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+/* RIGHT */
+.ch-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ch-history button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.ch-history button:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.theme-toggler {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.theme-toggler:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ───────────────── TITLE BAR ───────────────── */
+.ch-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+}
+
+.ch-title-input {
+  flex: 1;
+}
+
+.ch-title-input input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+}
+
+.ch-title-input input::placeholder {
+  color: var(--muted);
+}
+
+.ch-title-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Buttons */
+.preview-btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.preview-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.publish-btn {
+  padding: 8px 18px;
+  border-radius: 6px;
+  background: var(--primary);
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.publish-btn:hover {
+  opacity: 0.9;
+}
+
+/* ───────────────── LIGHT MODE ───────────────── */
+[data-theme="light"] .back-btn:hover,
+[data-theme="light"] .ch-history button:hover,
+[data-theme="light"] .theme-toggler:hover,
+[data-theme="light"] .preview-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .ch-tab:hover {
+  background: #f1f5f9;
+}
+[data-theme="light"] .ch-title-input input {
+  background: #ffffff;
+  border-color: #d1d5db;
+  color: #111827;
+}
+[data-theme="light"] .ch-title-input input::placeholder {
+  color: #6b7280;
+}
+[data-theme="light"] .ch-publish-btn:hover {
+  opacity: 0.95;
+}
+[data-theme="light"] .ch-publish-btn{
+  background: #3b82f6;
+}
+[data-theme="light"] .preview-btn {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  color: #111827;
+}
+[data-theme="light"] .preview-btn:hover {
+  background: #f3f4f6;
+}
+[data-theme="light"] .ch-undo-btn,
+[data-theme="light"] .ch-redo-btn {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  color: #111827;
+}
+[data-theme="light"] .ch-undo-btn:hover,
+[data-theme="light"] .ch-redo-btn:hover {
+  background: #f3f4f6;
+}
+[data-theme="light"] .back-btn {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  color: #111827;
+}
+[data-theme="light"] .back-btn:hover {
+  background: #f3f4f6;
+}
+[data-theme="light"] .theme-toggler {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  color: #111827;
+}
+[data-theme="light"] .theme-toggler:hover {
+  background: #f3f4f6;
+}
+[data-theme="light"] .ch-tab {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  color: #111827;
+}
+[data-theme="light"] .ch-tab-active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #ffffff;
+}
+[data-theme="light"] .ch-tab-active:hover {
+  background:#111827;
+  border:#6b7280 1px solid;
+}
+
+/* ───────────────── RESPONSIVE ───────────────── */
+@media (max-width: 768px) {
+  .ch-topbar {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .ch-topbar-center {
+    order: 3;
+  }
+
+  .ch-titlebar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ch-title-actions {
+    justify-content: flex-end;
+  }
+}
+.ch-tab-plus {
+  position: relative;
+}
+
+.ch-dropdown {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 6px;
+  min-width: 180px;
+  z-index: 999;
+  display: none;
+}
+
+.ch-dropdown button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 8px 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ch-dropdown button:hover {
+  background: #1f1f1f;
+}
+
+/* show on hover (temporary) */
+.ch-tab-plus:hover .ch-dropdown {
+  display: block;
+}
+.ch-tab-wrapper {
+  display: flex;
+  align-items: center;
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ch-tab-wrapper.active {
+  border-color: #3b82f6;
+}
+
+.ch-tab {
+  padding: 8px 14px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.ch-tab-close {
+  padding: 0 10px;
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.ch-tab-close:hover {
+  color: #ef4444;
+}

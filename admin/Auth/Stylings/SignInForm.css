@@ -1,0 +1,140 @@
+/* ===== FORM ROOT ===== */
+.signin-form {
+  width: 100%;
+  display: flex;                /* ✅ REQUIRED */
+  flex-direction: column;
+  align-items: center;          /* ✅ centers h2 + button */
+}
+
+/* ===== HEADING ===== */
+.signin-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===== SOCIALS ===== */
+.signin-socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+
+
+/* ===== SMALL TEXT ===== */
+.signin-small-text {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* ===== EMAIL FIELD ===== */
+.signin-field {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.signin-field input {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  background: #eee;
+  border-radius: 6px;
+  line-height: 44px;
+  font-size: 14px;
+  text-align: left;             /* ✅ FIX */
+}
+
+/* ===== PASSWORD FIELD ===== */
+.signin-password-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.signin-password-field input {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+  height: 44px;
+  padding: 0 96px 0 14px;
+  background: #eee;
+  border-radius: 6px;
+  line-height: 44px;
+  font-size: 14px;
+  text-align: left;             /* ✅ FIX */
+}
+
+/* ===== SHOW / HIDE BUTTON ===== */
+.signin-toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* ===== ERROR ===== */
+.signin-error-text {
+  color: #ff4b2b;
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.signin-primary-btn {
+  margin-top: 20px;
+  padding: 12px 40px;
+  border-radius: 20px;
+  border: none;
+  background: #ff4b2b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: center;           /* ✅ center button */
+}
+
+.signin-primary-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+/* Google Sign-in button */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 0;
+  background: white;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3c4043;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.google-btn:hover {
+  background: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.google-btn:active {
+  background: #e8e8e8;
+}
+
+.google-logo {
+  width: 18px;
+  height: 18px;
+}

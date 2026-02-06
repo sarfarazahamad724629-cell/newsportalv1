@@ -1,0 +1,11 @@
+{
+  "id": 123,
+  "type": "paragraph",
+  "text": "",
+  "styles": {
+    "fontSize": "16px",
+    "color": "#ffffff",
+    "fontWeight": "400",
+    "textDecoration": "none"
+  }
+}
